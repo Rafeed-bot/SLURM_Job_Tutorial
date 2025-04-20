@@ -1,0 +1,19 @@
+- SLURM (Simple Linux Utility for Resource Management) job submission
+    - what is SLURM scheduling?
+    - only possible in computing nodes of HPC (high performance computing) clusters
+    - normal servers: use screen (tutorial: https://www.youtube.com/watch?v=5--fS37dhLk&t=269s)
+- login node
+    - no job running
+    - what not to do in login node
+- interactive node
+    - srun -t 8:00:00 --ntasks-per-node 4 --mem=15G -p interactive --pty /bin/bash
+- Job submission scripts
+    - sbatch {script_name}.sbatch
+- monitoring job runs:
+    - squeue | grep {username}
+- cancelling jobs:
+    - scancel {job_ID}
+- queueu types:
+    - express
+    - normal
+    - long
