@@ -8,6 +8,12 @@
 - interactive node
     - srun -t 8:00:00 --ntasks-per-node 4 --mem=15G -p interactive --pty /bin/bash
 - Job submission scripts
+    - activate virtual env 
+        - conda activate {env_name}
+    - look for libraries
+        - module spider {library_name}
+    - load libraries
+        - module load {library_name}
     - sbatch {script_name}.sbatch
 - monitoring job runs:
     - squeue | grep {username}
